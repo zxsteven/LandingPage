@@ -9,8 +9,8 @@
 	  <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
-  <body>
-	<nav class="navbar navbar-inverse">
+  <body data-spy="scroll" data-target=".navbar-collapse">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="collapse">
@@ -23,17 +23,74 @@
 	    </div>
 	    <div class="collapse navbar-collapse" id="navbar-collapse">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#home">Home<span class="sr-only">(current)</span></a></li>
+	        <li class="active"><a href="#topContainer">Home<span class="sr-only">(current)</span></a></li>
 	        <li><a href="#about">About</a></li>
-	        <li><a href="#download">Download</a></li>
+	        <li><a href="#footer">Download</a></li>
 	      </ul>
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#signup">Sign Up</a></li>
-	      </ul>
+	      <form class="navbar-form navbar-right">
+	      	<div class="form-group">
+	      		<input type="email" placeholder="Email..." class="form-control" />
+	      	</div>
+	      	<div class="form-group">
+	      		<input type="password" placeholder="Password..." class="form-control" />
+	      	</div>
+	      	<button type='submit' class="btn btn-success">Log In</button>
+	      </form>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
+	
+	<div class="container-fluid contentContainer" id="topContainer">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3" id="topRow">
+				<h1 class="marTop">Example text</h1>
+				<p class="lead">This is why you should get this.</p>
+				<p>More information about the app and how awesome it is.</p>
+				<p class="bold marTop">Iterested? Join our mailing list!</p>
+				<form class="marTop">
+					<div class="input-group">
+						<label for="email"></label>
+							<span class="input-group-addon">@</span>
+							<input type="email" class="form-control" placeholder='Enter email address here...'>
+						</div>
+						<input type="submit" class="btn btn-success btn-lg marTop">
+				</form>
+			</div>
+		</div>
+	</div>
 
+	<div class="container-fluid contentContainer" id="about">
+		<div class="row center">
+			<div class="col-md-6 col-md-offset-3">
+				<h1 class="center title">This is obviously the greatest thing ever invented in history</h1>
+				<p class="lead center">This is usually where you put a summary of the apps unrelenting greatness.</p>
+			</div>
+		<div class="row marBot">
+			<div class="col-md-4 marTop">
+				<h1><span class="glyphicon glyphicon-star"></span>First</h1>
+				<p>A brief description of one of the best features of the app.A brief description of one of the best features of the app.A brief description of one of the best features of the app.</p>
+				<button class="btn btn-success marTop">Log In</button>
+			</div>
+			<div class="col-md-4 marTop">
+				<h1><span class="glyphicon glyphicon-record"></span>Second</h1>
+				<p>A brief description of one of the best features of the app.A brief description of one of the best features of the app.A brief description of one of the best features of the app.</p>
+				<button class="btn btn-success marTop">Log In</button>
+			</div>
+			<div class="col-md-4 marTop">
+				<h1><span class="glyphicon glyphicon-heart-empty"></span>Third</h1>
+				<p>A brief description of one of the best features of the app.A brief description of one of the best features of the app.A brief description of one of the best features of the app.</p>
+				<button class="btn btn-success marTop">Log In</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid contentContainer" id="footer">
+		<div class="row">
+			<h1 class="center">Download The App!</h1>
+			<p class="lead center">Why should I download this app?</p>
+			<p class="center"><img src="app.png" class="appstore"></p>
+		</div>
+	</div>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
